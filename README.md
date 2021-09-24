@@ -18,7 +18,14 @@
   </p>
 </p>
 
+---
+
+<p align="center">
+  <img src="ss/architecture.png" alt="icon" width="50%">
+</p>
+
 ## Used Technologies
+
 - MongoDB
 - Node.js
 - Express.js
@@ -49,8 +56,8 @@ npm install
     ```bash
     touch  .env
     ```
-3.  The file `.env` is already ignored, so you never commit your credentials.
-4.  Change the values of the file to your environment. 
+2.  The file `.env` is already ignored, so you never commit your credentials.
+3.  Change the values of the file to your environment.
     ```bash
     ATLAS_URI=YourConnectionString
     ```
@@ -82,7 +89,7 @@ npm install
 ### Running API server locally
 
 ```bash
-npm run dev 
+npm run dev
 ```
 
 You will know server is running by checking the output of the command `npm run dev`
