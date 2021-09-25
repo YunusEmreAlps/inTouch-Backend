@@ -21,7 +21,7 @@
 ---
 
 <p align="center">
-  <img src="ss/architecture.png" alt="icon" width="50%">
+  <img src="ss/architecture.png" alt="icon" width="75%">
 </p>
 
 ## Used Technologies
