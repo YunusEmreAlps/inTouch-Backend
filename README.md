@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/YunusEmreAlps/inTouch-Backend/">
-    <img src="ss/icon.png" alt="icon" width="200">
+    <img src="ss/icon.png" alt="icon" width="100">
   </a>
 
   <h3 align="center">inTouch - Backend</h3>
@@ -21,7 +21,7 @@
 ---
 
 <p align="center">
-  <img src="ss/architecture.png" alt="icon" width="75%">
+  <img src="ss/architecture.png" alt="arc" width="75%">
 </p>
 
 ## Used Technologies
