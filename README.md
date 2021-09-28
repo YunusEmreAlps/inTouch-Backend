@@ -18,7 +18,7 @@
   </p>
 </p>
 
----
+## Architecture
 
 <p align="center">
   <img src="ss/architecture.png" alt="arc" width="75%">
@@ -26,9 +26,10 @@
 
 ## Used Technologies
 
-- MongoDB
-- Node.js
-- Express.js
+- MongoDB: NoSQL database
+- Node.js: General Platform
+- Express.js: Middleware Framework
+- Socket.IO: Messaging library
 
 ### Using Git (recommended)
 
@@ -102,3 +103,17 @@ Press CTRL + C to stop the process.
 ```
 
 **Note:** `YOUR_DB_CONNECTION_STRING` will be your MongoDB connection string.
+
+---
+
+### Step 1: MongoDB
+
+- Part 1: Create an Atlas Account.
+- Part 2: Deploy a Free Cluster.
+- Part 3: Add Your Connection IP Address to Your IP Access List.
+- Part 4: Create a Database User for Your Cluster.
+- Part 5: Connect to Your Cluster.
+- Part 6: Insert and View Data in Your Cluster.
+
+[MongoDB Atlas Kurulum](https://devnot.com/2019/mongodb-atlas-nedir-ve-nasil-olusturulur/)
+[MongoDB Atlas Tutorial](https://docs.atlas.mongodb.com/tutorial/deploy-free-tier-cluster/)

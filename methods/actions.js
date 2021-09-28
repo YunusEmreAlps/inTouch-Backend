@@ -4,17 +4,25 @@ var config = require('../config/dbconfig')
 
 var functions = {
     addNew: function (req, res) {
-        if ((!req.body.email) || (!req.body.password)) {
+        if ((!req.body._id)) { // || (!req.body.password) 
             res.json({success: false, msg: 'Enter all fields'})
         }
         else {
             var newUser = User({
-                email: req.body.email,
+                _id: req.body._id,
                 password: req.body.password
             });
             newUser.save(function (err, newUser) {
                 if (err) {
-                    res.json({success: false, msg: 'Failed to save'})
+                    if(err.code == '11000'){
+                        res.json({
+                            msg:'This session ID has already been registered, please change your session ID',
+                            success:false
+                        })
+                    }
+                    else{
+                        res.json({success: false, msg: 'Failed to save'})
+                    }
                 }
                 else {
                     res.json({success: true, msg: 'Successfully saved'})
@@ -24,7 +32,7 @@ var functions = {
     },
     authenticate: function (req, res) {
         User.findOne({
-            email: req.body.email
+            _id: req.body._id
         }, function (err, user) {
                 if (err) throw err
                 if (!user) {
@@ -49,7 +57,7 @@ var functions = {
         if (req.headers.authorization && req.headers.authorization.split(' ')[0] === 'Bearer') {
             var token = req.headers.authorization.split(' ')[1]
             var decodedtoken = jwt.decode(token, config.secret)
-            return res.json({success: true, msg: 'Hello ' + decodedtoken.email})
+            return res.json({success: true, msg: 'Hello ' + decodedtoken._id})
         }
         else {
             return res.json({success: false, msg: 'No Headers'})
