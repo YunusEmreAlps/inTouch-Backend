@@ -5,7 +5,9 @@ var userSchema = new Schema({
     _id: {
         type: String,
         required: [true, 'ID field is required'],
-        unique: true
+        unique: true,
+        trim: true,
+        maxlength: [10, 'ID must be less than 10 chars']
     },
     password: {
         type: String,

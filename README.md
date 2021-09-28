@@ -115,5 +115,5 @@ Press CTRL + C to stop the process.
 - Part 5: Connect to Your Cluster.
 - Part 6: Insert and View Data in Your Cluster.
 
-[MongoDB Atlas Kurulum](https://devnot.com/2019/mongodb-atlas-nedir-ve-nasil-olusturulur/)
-[MongoDB Atlas Tutorial](https://docs.atlas.mongodb.com/tutorial/deploy-free-tier-cluster/)
+* [MongoDB Atlas Kurulum](https://devnot.com/2019/mongodb-atlas-nedir-ve-nasil-olusturulur/)
+* [MongoDB Atlas Tutorial](https://docs.atlas.mongodb.com/tutorial/deploy-free-tier-cluster/)
