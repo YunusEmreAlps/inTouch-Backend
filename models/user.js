@@ -1,18 +1,23 @@
 var mongoose = require('mongoose')
 var Schema = mongoose.Schema;
 var bcrypt = require('bcrypt')
-var userSchema = new Schema({
-    _id: {
-        type: String,
-        required: [true, 'ID field is required'],
-        unique: true,
-        trim: true,
-        maxlength: [10, 'ID must be less than 10 chars']
+var userSchema = new Schema(
+    {
+        _id: {
+            type: String,
+            required: [true, 'ID field is required'],
+            unique: true,
+            trim: true,
+            maxlength: [10, 'ID must be less than 10 chars']
+        },
+        password: {
+            type: String,
+        }
     },
-    password: {
-        type: String,
+    {
+        timestamps: true,
     }
-})
+)
 
 userSchema.pre('save', function (next) {
     var user = this;

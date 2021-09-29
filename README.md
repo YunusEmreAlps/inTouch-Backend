@@ -21,7 +21,7 @@
 ## Architecture
 
 <p align="center">
-  <img src="ss/architecture.png" alt="arc" width="75%">
+  <img src="ss/architecture.png" alt="architecture" width="75%">
 </p>
 
 ## Used Technologies
@@ -117,3 +117,8 @@ Press CTRL + C to stop the process.
 
 * [MongoDB Atlas Kurulum](https://devnot.com/2019/mongodb-atlas-nedir-ve-nasil-olusturulur/)
 * [MongoDB Atlas Tutorial](https://docs.atlas.mongodb.com/tutorial/deploy-free-tier-cluster/)
+
+
+<p align="center">
+  <img src="ss/database.png" alt="database" width="75%">
+</p>

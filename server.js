@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express')
 const morgan = require('morgan')
 const cors = require('cors')
@@ -7,8 +8,6 @@ const bodyParser = require('body-parser')
 const routes = require('./routes/index')
 const trackRoutes = require('./routes/trackRoutes')
 
-//environment variables
-require('dotenv').config();
 
 connectDB()
 const app = express()
