@@ -120,5 +120,5 @@ Press CTRL + C to stop the process.
 
 
 <p align="center">
-  <img src="ss/database.png" alt="database" width="75%">
+  <img src="ss/database.png" alt="database" width="50%">
 </p>
