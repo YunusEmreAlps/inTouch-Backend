@@ -60,7 +60,7 @@ npm install
 2.  The file `.env` is already ignored, so you never commit your credentials.
 3.  Change the values of the file to your environment.
     ```bash
-    ATLAS_URI=YourConnectionString
+    MONGO_URI = YourConnectionString
     ```
 
 ## Project structure

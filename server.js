@@ -24,7 +24,7 @@ app.use(routes)
 app.use(passport.initialize())
 require('./config/passport')(passport)
 
-
+// Real-Time Location 
 let users = [];
 
 const io = new Server(server, {
@@ -33,6 +33,7 @@ const io = new Server(server, {
     },
   });
 
+// Setup socket.io
 io.on("connection", (socket) => {
   socket.on("join", (data) => {
     const user = {

@@ -3,6 +3,7 @@ var jwt = require('jwt-simple')
 var config = require('../config/dbconfig')
 
 var functions = {
+    // Register
     addNew: function (req, res) {
         if ((!req.body._id)) { // || (!req.body.password) 
             res.json({success: false, msg: 'Enter all fields'})
@@ -30,7 +31,8 @@ var functions = {
             })
         }
     },
-    authenticate: function (req, res, next) {
+    // Login
+    authenticate: function (req, res) {
         User.findOne({
             _id: req.body._id
         }, function (err, user) {
