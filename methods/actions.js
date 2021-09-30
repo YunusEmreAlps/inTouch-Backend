@@ -58,6 +58,9 @@ var functions = {
         if (req.headers.authorization && req.headers.authorization.split(' ')[0] === 'Bearer') {
             var token = req.headers.authorization.split(' ')[1]
             var decodedtoken = jwt.decode(token, config.secret)
+            User.find().then((developers) => {
+                res.json(developers);
+            });
             return res.json({success: true, msg: 'Hello ' + decodedtoken.username})
         }
         else {

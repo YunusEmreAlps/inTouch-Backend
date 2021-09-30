@@ -109,7 +109,7 @@ Press CTRL + C to stop the process.
 
 ---
 
-### Step 1: MongoDB
+### MongoDB
 
 - Part 1: Create an Atlas Account.
 - Part 2: Deploy a Free Cluster.
@@ -124,4 +124,24 @@ Press CTRL + C to stop the process.
 
 <p align="center">
   <img src="ss/database.png" alt="database" width="50%">
+</p>
+
+
+### POSTMAN
+
+<p align="center">
+  <ul>
+    <li>
+     <img src="ss/postman1.png" alt="architecture"  height="50%">
+    </li>
+    <li>
+     <img src="ss/postman2.png" alt="architecture" height="50%">
+    </li>
+        <li>
+     <img src="ss/postman3.png" alt="architecture"  height="50%">
+    </li>
+        <li>
+     <img src="ss/postman4.png" alt="architecture" height="50%">
+    </li>
+  </ul>
 </p>
