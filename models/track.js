@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+// Geolocation API
 const pointSchema = new mongoose.Schema({
     timestamp:Number,
     coords:{

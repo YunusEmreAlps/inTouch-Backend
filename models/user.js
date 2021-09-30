@@ -3,14 +3,12 @@ var Schema = mongoose.Schema;
 var bcrypt = require('bcrypt')
 var userSchema = new Schema(
     {
-        _id: {
+        username: {
             type: String,
-            required: [true, 'ID field is required'],
+            required: [true, 'Username field is required'],
             unique: true,
-            trim: true,
-            maxlength: [10, 'ID must be less than 10 chars']
         },
-        password: {
+        password: { // optional
             type: String,
         }
     },

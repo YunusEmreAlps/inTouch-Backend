@@ -81,7 +81,10 @@ npm install
 ├── routes
 │   ├── index.js
 ├── ss
+│   ├── architecture.png
+│   ├── database.png
 │   ├── icon.png
+│   ├── icon1.png
 │   ├── icon2.png
 ```
 
